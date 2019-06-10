@@ -13,11 +13,12 @@ end
 
 def words_five_letters_long(text)
   words = text.split(" ")
-  $new_array << words.grep(/\b\w{5}\b/)
+  words.scan(/\b\w{5}\b/)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-
+  words = text.split(" ")
+  text.match(/\^(A-Z))
 end
 
 def valid_phone_number?(phone)
